@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript settimeout and  cleartimeout</title>
+    <style>
+        #para{
+            width: auto;
+            height: 100px;
+            border: 3px solid black;
+            border-radius: 9px;
+            text-align: center;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 25px;
+            padding:6px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p id="para">chaitanya </p>
+    </div>
+    <script>
+        let para=document.getElementById('para')
+        function show(){
+            arr=['red','blue','aqua', 'grey','chocolate','yellow'];
+            i=Math.floor(Math.random()*7);
+            para.style.backgroundColor=arr[i];
+            
+
+            // para.style.backgroundColor='red';
+
+        }
+        // setTimeout(show , 2000);
+        setInterval(show,2000 );
+        // setInterval(para.style.display='none', 3000);
+        y=new Date();
+        console.log(y);
+        para.innerHTML+= "\n" +`${y}`;
+
+    </script>
+</body>
+</html>

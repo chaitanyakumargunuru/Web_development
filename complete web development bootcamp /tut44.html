@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events and Eventlistener</title>
+    <style>
+        .container{
+            background-color: antiquewhite;
+            color: black;
+        }
+        #btn{
+            padding: 10px;
+            background-color: grey;
+            color: black;
+            border: 3px solid black;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Paragraph</h1>
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore optio corporis magnam eligendi, iusto animi debitis voluptatum voluptates sint natus voluptate at asperiores quas, qui ducimus. Mollitia corporis quasi veritatis pariatur alias odio nihil fuga tempore? Nisi incidunt commodi harum recusandae nesciunt saepe accusamus dolorum. Aut et, rerum nobis ut natus consectetur atque sint consequatur, officia assumenda obcaecati praesentium aliquid corrupti, magnam corporis maiores porro fugit ad mollitia? Obcaecati, quae est sequi sed autem in consequatur inventore accusantium nemo similique, sunt fuga quisquam! Facilis eligendi ab, voluptates dolorum veritatis ipsa quod expedita laborum omnis fugiat minus amet, consequatur eaque!</p></div>
+        <button id="btn" onclick="hide()">Show/hide
+        </button>
+    <script>
+    function hide(){
+            let para = document.getElementById('para');
+            let btn = document.getElementById('btn');
+            // document.getElementById('para').innerHTML="chaitanya"
+            if(para.style.display == 'none'){
+                para.style.display = 'block';
+            }
+            else{
+                para.style.display='none';
+            }
+        }
+        let para = document.getElementById('para');
+        // eventlisteners
+        para.addEventListener("mouseover", function fun(){
+            prompt("see the mouse");
+        });
+
+    </script>
+</body>
+</html>

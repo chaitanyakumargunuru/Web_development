@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope | if-else ladder</title>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>item-1</li>
+            <li>item-2</li>
+            <li>item-3</li>
+            <li>item-4</li>
+            <li>item-5</li>
+            <li>item-6</li>
+        </ul>
+    </div>
+    <script>
+        let a="chaitanya kumar";
+        {
+            a="chaitu";
+        }
+        a="chaitu";
+        const c="aruna";
+        // const c="penta rao";
+        {
+        const c="penta rao";}
+        console.log(a);
+        console.log(c);
+        // IF else
+        age=45;
+        if(age==45)
+        {console.log("your age is 45");}
+        else if (age>45){
+            console.log("your age is greater than 45");
+        }
+        else {
+            console.log("your age is not 45");
+        }
+        // switch case
+        switch (c) {
+            case "chaitanya":
+                {console.log("you r chaitanya")}
+                break;
+        
+            default:
+                {console.log("you r aruna")}
+                break;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container{
+    background-color: antiquewhite;
+    border: 4px dashed rgba(17, 172, 199, 0.727);
+    padding: 20px;
+}
+.item{
+    background-color: aquamarine;
+    padding: 10px 10px;
+    border: 3px solid rgb(157, 170, 14);
+    margin: 20px;
+    border-radius: 30px;
+}
+#fruit{
+    float: left;
+    width: 40%;
+
+}
+#computer{
+    float: right;
+    width: 40%;
+}
+#stationary{
+    clear: both;
+}
+p,h3{
+    text-align: center;
+}

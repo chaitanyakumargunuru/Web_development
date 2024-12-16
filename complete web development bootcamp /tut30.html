@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attributea and nth child</title>
+    <style>
+        .container{
+            border: 3px solid black;
+            border-radius: 10px;
+            background-color: aqua;
+            color: black;
+            display: block;
+            /* text-align: center; */
+            margin: auto;
+        }
+        .formgroup input{
+            display: block;
+            padding: 3px;
+            margin:3px auto;
+            text-align: center;
+        }
+        input[type='text']{
+            border: 3px solid cadetblue;
+        }
+        button{
+            width: 100px;
+            color: black;
+            /* display:inline-block; */
+            margin:auto;
+            display: block;
+        }
+        a[target="_blank"]{
+            color:red;
+            text-decoration: none;
+        }
+        .item{
+            /* display:block; */
+            margin:auto;
+            /* text */
+        }
+        li:nth-child(odd){
+            color:red;
+        }
+        /* li:nth-child(4n+1){
+            color: blueviolet;
+        } */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3><a href="http://www.google.com" target="_blank">GO to Google</a></h3>
+        <h3><a href="http://www.facebook.com" target="_self">GO to facebook</a></h3>
+        <form action="" class="formgroup">
+            <input type="text" placeholder="Enter your Name" >
+            <input type="Email" placeholder="Enter your Email" >
+            <input type="password" placeholder="Enter your password" >
+            <button type="submit" value="submit">Submit</button>
+            <!-- <input type="submit" value="submit"> -->
+        </form>
+        <ul>
+            <li class="item" id="item1">first line</li>
+            <li class="item" id="item2">Second line</li>
+            <li class="item" id="item3">Third line</li>
+            <li class="item" id="item4">Fourth line</li>
+            <li class="item" id="item5">Fifth line</li>
+            <li class="item" id="item6">Sixth line</li>
+            <li class="item" id="item7">Seventh line</li>
+            <li class="item" id="item8">Eighth line</li>
+            <li class="item" id="item9">Ninth line</li>
+            <li class="item" id="item10">Tenth line</li>
+        </ul>
+    </div>
+    
+</body>
+</html>

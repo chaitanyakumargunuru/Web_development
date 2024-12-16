@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables/css properties</title>
+    <style>
+        :root{
+            --primary-color:aqua;
+            --second:black;
+        }
+        .container{
+            background-color: var(--primary-color);
+            border: 3px solid var(--second);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 500px;
+            width: 1300px;
+            /* if width is given in flex then we should give margin auto for centring */
+            margin: auto;
+            
+        }
+        .box{
+            border: 3px solid chocolate;
+            width: 300px;
+            height: 300px;
+            margin: 3px 9px;
+            padding: 4px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    
+</body>
+</html>

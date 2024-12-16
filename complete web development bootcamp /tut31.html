@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After pseudo selectors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Burned&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            font-family: 'Fredoka', sans-serif;
+            height: 2000px;
+            /* display:flex; */
+        }
+       
+        .navbar li{
+            display:inline-block;
+            list-style: none;
+            /* flex-direction: row; */
+            padding: 5px 30px;
+            margin: auto;
+            font-size:20px;
+            cursor: pointer;
+        }
+        header{
+            position: sticky;
+            top:5px;
+        }
+       
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        section{
+            display: flex;
+            /* position:sticky ;
+            top:20px; */
+            flex-direction: column;
+            margin: auto;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            border: 3px solid rgb(221, 209, 209);
+            border-radius: 20px;
+            box-shadow: 6px 6px 4px cyan;
+        }
+        h3{
+            font-family: 'Rubik Burned', system-ui;
+            /* font-family: 'Ubuntu', sans-serif; */
+            font-size: 3rem;
+            /* text-shadow: offset-x offset-y blur radius spread radius; */
+            text-shadow: 6px 6px 4px rgb(94, 168, 208);
+        }
+        section::before{
+            position: absolute;
+            top: 0;
+            left: 0;
+            content:"";
+            background: url('https://source.unsplash.com/collection/190727/1600x900') no-repeat center center/cover;
+            opacity: 0.4;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="lin">
+                <li> <a href="http://127.0.0.1:5500/tut31.html">Home</a></li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h3>Welcome to creative Website</h3>
+        <h3>Note: this tutorial also contains <strong>box-shadow</strong>  and <strong>text-shadow</strong></h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae ducimus voluptas cupiditate recusandae dolorum repellendus explicabo totam officiis nostrum molestiae ea obcaecati nihil, sunt odio! Non perspiciatis, ratione repellendus reiciendis error rerum at quam quaerat eum repellat delectus saepe consequuntur.</p>
+    </section>
+</body>
+</html>
